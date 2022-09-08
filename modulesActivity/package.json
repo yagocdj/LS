@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "type": "module",
+    "is-number-object": "^1.0.7"
+  }
+}

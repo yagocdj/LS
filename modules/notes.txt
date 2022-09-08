@@ -1,0 +1,3 @@
+Exercício para casa:
+instalar uma biblioteca por meio do npm;
+utilizar essa biblioteca.

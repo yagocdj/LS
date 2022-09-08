@@ -1,0 +1,2 @@
+# É importante sempre colocar a pasta node_modules no gitignore para que o repositório não fique poluído
+npm-install/node_modules/

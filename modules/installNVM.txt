@@ -1,0 +1,6 @@
+procurar o nvm no chrome
+acessar o github do nvm
+nvm -> instalação_> copiar a linha wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+depois do download -> abrir um novo terminal
+digitar o seguinte comando -> nvm -v -> para ver se instalou
+nvm install 18 -> para instalar a versão 18 do node

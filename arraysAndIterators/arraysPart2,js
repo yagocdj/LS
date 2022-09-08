@@ -1,0 +1,67 @@
+const array = [1, 3, 5];
+
+// programação voltada a imperativos
+for (let i = 0; i < array.length; i++) {
+    // console.log(array[i]);
+}
+
+// forEach()
+array.forEach(imprimir); // estamos pegando o corpo da função e não a sua chamada em si
+
+// programação voltada a funções
+function imprimir(valor, indice) {
+    console.log(valor + " - " + indice);
+}
+
+console.log(array.map((valor) => valor * valor));
+
+// map()
+// console.log(
+// array.map(elevarAoQuadrado)
+
+// array.map(function(valor) {
+// return valor * valor;
+// })
+
+// array.map((valor) => {
+// return valor * valor;
+// })
+
+// array.map((valor) => valor * valor)
+// );
+
+function elevarAoQuadrado(valor) {
+    return valor * valor;
+}
+
+// reduce() -> o 0 em quanto a soma vai começar (acumulado)
+console.log(
+    array.reduce((acumulado, valor) => acumulado + valor, 0)
+);
+// parâmetro 1 -> (acumulado, valor) => acumulado + valor
+// parâmetro 2 -> 0
+
+// filter()
+
+console.log(
+    array.filter(valor => valor > 2)
+);
+
+// every()
+console.log(
+    array.every(valor => valor % 2 != 0)
+);
+
+console.log(
+    array.some(valor => valor % 2 != 0)
+);
+
+// dica exercício
+function soma(a, b) {
+    console.log([...arguments]);
+
+    return [...arguments].reduce((acumulado, valor) => acumulado + valor, 0);
+}
+
+console.log("Soma: " + soma(1, 2));
+console.log("Soma: " + soma(1, 2, 3));
