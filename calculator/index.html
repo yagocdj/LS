@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrando JS e HTML!</title>
+</head>
+<body>
+    <h1>Aula de integração JS e HTML!</h1>
+
+    <form>
+        <p>Operando 1: <input type="text" name="op1" id="op1"></p>
+        <p>Operando 2: <input type="text" name="op2" id="op2"></p>
+        <p>Operador: <input type="text" name="operador" id="operador"></p>
+        <p><button type="button" onclick="tratarOperacao();">Calcular!</button></p>
+    </form>
+
+    <h3 id="resultado"></h3>
+
+    <script>
+        function tratarOperacao(){
+
+            let operando1 = parseInt(document.querySelector("#op1").value);
+            let operando2 = parseInt(document.querySelector("#op2").value);
+            let operador = document.querySelector("#operador").value;
+            let resultado;
+
+            switch (operador) {
+                case '+':
+                    resultado = operando1 + operando2;
+                    break;
+                case '-':
+                    resultado = operando1 - operando2;
+                    break;
+                case '*':
+                    resultado = operando1 * operando2;
+                    break;
+                case '/':
+                    resultado = operando1 / operando2;
+                    break;
+                default:
+                    resultado = 'Operação inválida';
+            }
+
+            document.querySelector("#resultado").innerHTML = resultado;
+
+            if (resultado <= 50) {
+                document.querySelector("#resultado").setAttribute("style", "color: red;");
+            } else {
+                document.querySelector("#resultado").setAttribute("style", "color: blue;");
+            }
+
+            // document.querySelector("#op1").value = "";
+
+            // if greater than 50 -> blue
+            // else -> red
+        }
+    </script>
+</body>
+</html>
