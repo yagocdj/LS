@@ -19,6 +19,8 @@
 
     .largura-30 img {
       width: 30vw;
+      height: 60vh;
+      object-fit: cover;
     }
 
     .largura-30 h3 {
@@ -31,8 +33,16 @@
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      gap: 20px;
+      justify-content: space-around;
+      gap: 13px;
     }
+
+    footer {
+      display: flex;
+      justify-content: center;
+      padding: 0 0 1em 0;
+    }
+
   </style>
 </head>
 <body>
@@ -40,6 +50,9 @@
   <main>
     
   </main>
+  <footer>
+    <button type="button">Adicionar mais elementos</button>
+  </footer>
   <script src="js/app.js" type="module"></script>
 </body>
 </html>

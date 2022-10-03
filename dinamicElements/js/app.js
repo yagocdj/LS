@@ -10,7 +10,7 @@ function loadComidas(){
 }
 
 function criarNovoPrato(id, nome, imagem) {
-  const novoPratoPizza = 
+  const novoPrato = 
     `
     <div class='largura-30' id='food-${id}'>
       <h3>${nome}</h3>
@@ -19,7 +19,7 @@ function criarNovoPrato(id, nome, imagem) {
     `;
 
   const main = document.querySelector('main');
-  main.insertAdjacentHTML('beforeend', novoPratoPizza);
+  main.insertAdjacentHTML('beforeend', novoPrato);
 }
 
 loadComidas();

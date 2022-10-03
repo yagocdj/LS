@@ -1,24 +1,36 @@
 const datasetObject = [
   {
     id: 1,
-    name: 'Hambúrguer',
-    image: 'imgs/hamburguer.jpg',
+    name: 'Bike One',
+    image: 'imgs/bikeOne.jpg'
   },
   {
     id: 2,
-    name: 'Sanduíche',
-    image: 'imgs/sanduiche.jpg',
+    name: 'Bike Two',
+    image: 'imgs/bikeTwo.jpg'
   },
   {
     id: 3,
-    name: 'Milk Shake',
-    image: 'imgs/milkshake.jpg',
+    name: 'Bike Three',
+    image: 'imgs/bikeThree.jpg'
   },
   {
     id: 4,
-    name: 'Suco',
-    image: 'imgs/suco.jpg',
+    name: 'Bike Four',
+    image: 'imgs/bikeFour.jpg'
   },
+
+  {
+    id: 5,
+    name: 'Bike Five',
+    image: 'imgs/bikeFive.jpg'
+  },
+
+  {
+    id: 6,
+    name: 'Bike Six',
+    image: 'imgs/bikeSix.jpg'
+  }
 ];
 
 const dataset = JSON.stringify(datasetObject);
