@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1>IMC</h1>
+  <form>
+    <div>
+      <p><label for="altura">Altura(m):</label></p>
+      <p><input id="altura" value="" type="text" name="altura"></p>
+    </div>
+    
+    <div>
+      <p><label for="peso">Peso(Kg):</label></p>
+      <p><input id="peso" type="text" name="peso"></p>
+    </div>
+
+    <div>
+      <p>Sexo:</p>
+      <p>
+        <input type="radio" id="masculino" name="sexo" value="M">
+        <label for="masculino">Masculino</label>
+        <input type="radio" id="feminino" name="sexo" value="F">
+        <label for="feminino">Feminino</label>
+      </p>
+    </div>
+
+    <div>
+      <p>Condição:</p>
+      <p><input type="text" name="condicao" disabled></p>
+    </div>
+
+    <div>
+      <button type="button">Calcular o IMC</button>
+    </div>
+  </form>
+  <script src="script.js"></script>
+
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
+</body>
+
+</html>
